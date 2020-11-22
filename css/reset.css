@@ -1,0 +1,16 @@
+/* 解决不同浏览器不同属性的css文件 */
+
+/* 设置不同了浏览器默认样式统一即去掉边距 */
+html,body,ul,ol,li{
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+dl,dt,dd{
+    margin: 0px;
+    padding: 0px;
+}

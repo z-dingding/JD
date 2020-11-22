@@ -1,0 +1,494 @@
+/*index的html的文件样式 */
+
+.nav_top{
+    height: 30px;
+    background: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 设置居中 */
+.nav_top_box{
+    margin: 0px auto;
+    width: 1190px;
+    /* 设置右对齐 */
+    text-align: right; 
+}
+
+/* inline-block 设置ul-li 横排*/
+.nav_top_box ul li{
+    display: inline-block;
+    padding: 0px 10px ;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    position: relative;
+}
+
+.nav_top_box ul li a{
+    color: #999;
+    /* 取消a标签下划线 */
+   text-decoration: none;
+}
+
+.nav_top_box ul li:not(:last-child):after {
+  content: "";
+  width: 1px;
+  background: #ccc;
+  position: absolute;
+  height: 14px;
+  top: 8px;
+  right: 0px;
+  display: block;
+}
+
+.nav_top_box ul li a:hover{
+    color: red;
+}
+
+.logo_header_box_div{
+    width: 190px;
+    height: 120px;
+}
+
+.header_box{
+    height: 140px;
+    background: #ffffff;
+}
+
+.header{
+   width: 1190px;
+   margin: 0 auto;
+   display: flex;
+   padding: 10px 0px;
+}
+
+.header .logo_header_box{
+    width: 190px;
+    height: 140px;
+}
+
+.header .search_header_box{
+    width: 790px;
+    padding: 0px 10px;
+}
+
+.search_header_box .searchbar_header_box{
+    padding: 10px 0px 0px 50px;
+    /* display: flex 弹性布局使行向排列 */
+    display: flex;
+}
+.searchbar_header_box input{
+    border: 1px solid red;
+    width: 500px;
+    height: 30;
+    padding: 2px 10px;
+    /* outline: none 去掉浏览器默认样式，不然点击后border恢复默认 */
+    outline: none;
+}
+.searchbar_header_box .div_searchbtn_search{
+    width: 50px;
+    height: 34px;
+    border: 1px solid red;
+    /* cursor: pointer 鼠标悬停变手*/
+    cursor: pointer;
+    background: red;
+    /* div需要设置line-height在设置text-align才生效 */
+    line-height: 34px;
+    text-align: center;
+}
+
+
+.div_searchbtn_search  .iconfont_search{
+    color: #ffffff;
+    /* 通过设置字体大小改变图片大小 */
+    font-size: 22px;
+    /* 字体加粗 */
+    font-weight: bold;
+}
+
+.searchbar_header_box .div_minecart_search{
+   width: 100px;
+   margin: 0px 0px 0px 20px;
+   border: 1px solid #e1251b;
+   height: 34px;
+   line-height: 34px;
+     /* 字体居中 */
+     text-align: center;
+     color: red;
+     cursor: pointer;
+     font-size: 12px;  
+   
+}
+.div_minecart_search .iconfont_cart{
+
+    /* 通过设置字体大小改变图片大小 */
+    font-size: 18px;
+    /* 字体加粗 */
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+}
+
+.searchbar_header_box .div_minecart_search{
+    margin-left: 20px;
+    border: 1px solid red;
+    width: 100px;
+    height: 34px;
+    /* 字体居中 */
+    text-align: center;
+    color: red;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+.header .recommond_header_box{
+    font-size: 12px;
+    padding: 5px 0px 15px 50px;
+}
+
+
+.header .recommond_header_box a{
+    color: #999999;
+    text-decoration: none;
+}
+
+.search_header_box ul li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.search_header_box ul li a{
+    color: #333333;
+    text-decoration: none;
+}
+
+
+.content .wrapper{
+    margin: 0px auto;
+    width: 1190px;
+    padding:10px ;
+    /* 弹性布局,从左到右 */
+    display: flex;
+}
+
+.content_wrapper_menu_box{
+    width: 190px;
+    background: #ffffff;
+    position: relative;
+    padding: 10px 0px;
+    margin-right: 10px;
+}
+
+.content_wrapper_menu_box ul li{
+    height: 25px;
+    line-height: 25px;
+    padding: 0px 12px;
+    /* 字体不会超出li */
+    overflow: hidden;
+}
+
+.content_wrapper_menu_box ul li:hover{
+    background: #9d9d9d;
+}
+
+/* 当点击到li,右侧的内容展示 */
+.content_wrapper_menu_box ul li:hover .sub_menu{ 
+    display: block;
+}
+
+/* 原本计划是active，现在是hover，日后处理 */
+.content_wrapper_menu_box ul li:active{ 
+    display: block;
+}
+
+
+
+.content_wrapper_menu_box ul li a{
+    color: #333333;
+    text-decoration: none;
+
+}
+.content_wrapper_menu_box ul li a:hover{
+    color: red;
+}
+
+.content_wrapper_menu_box .sub_menu{
+    /* 绝对定位是相对于页面 */
+    position: absolute;
+    top: 0px;
+    left: 190px;
+    background:  #ffffff;
+    /* 元素的叠层顺序 */
+    z-index: 10;
+    width: 900px;
+    padding: 20px;
+    font-size: 12px;
+    /* 设置阴影参数依次是:水平位置，横向位置，阴影大小(值越大图像距离约小)，透明度 */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0,0.3);
+
+     display: none; 
+}
+
+
+/* 家用电器二级菜单部分顶部标题*/
+.sub_menu .jiadian_sub_left_box_title .item{
+    display: inline-block;
+    background: #333333;
+    padding: 0px 8px;
+    margin: 0px 10px 0px 0px ;
+    color: #ffffff;
+}
+.sub_menu .jiadian_sub_left_box_title .item:hover{
+    background: #e1251b;
+}
+
+.jiadian_sub_left_box .jiadian_sub_left_box_title{
+    margin: 0px 0px 10px 0px;
+}
+/* 手机二级菜单部分顶部标题*/
+.sub_menu .wrapper_menu_sub_phone_left_title_box .item{
+    display: inline-block;
+    background: #333333;
+    padding: 0px 8px;
+    margin: 0px 10px 0px 0px ;
+    color: #ffffff;
+}
+.sub_menu .wrapper_menu_sub_phone_left_title_box .item:hover{
+    background: #e1251b;
+}
+.wrapper_menu_sub_phone_left_box .wrapper_menu_sub_phone_left_title_box{
+    margin: 0px 0px 10px 0px;
+}
+/* 电脑二级菜单部分顶部标题*/
+.sub_menu .wrapper_menu_sub_pc_left_title_box .item{
+    display: inline-block;
+    background: #333333;
+    padding: 0px 8px;
+    margin: 0px 10px 0px 0px ;
+    color: #ffffff;
+    
+}
+.sub_menu .wrapper_menu_sub_pc_left_title_box .item:hover{
+    background: #e1251b;
+}
+.wrapper_menu_sub_phone_left_box .wrapper_menu_sub_pc_left_title_box{
+    margin: 0px 0px 10px 0px;
+}
+/* 家居二级菜单部分顶部标题*/
+.sub_menu .wrapper_menu_sub_jiaju_left_title_box .item{
+    display: inline-block;
+    background: #333333;
+    padding: 0px 8px;
+    margin: 0px 10px 0px 0px ;
+    color: #ffffff;
+    
+}
+.sub_menu .wrapper_menu_sub_jiaju_left_title_box .item:hover{
+    background: #e1251b;
+}
+.wrapper_menu_sub_phone_left_box .wrapper_menu_sub_jiaju_left_title_box{
+    margin: 0px 0px 10px 0px;
+}
+/* 男装二级菜单部分顶部标题*/
+.sub_menu .wrapper_menu_sub_nanzhuang_left_title_box .item{
+    display: inline-block;
+    background: #333333;
+    padding: 0px 8px;
+    margin: 0px 10px 0px 0px ;
+    color: #ffffff;
+    
+}
+.sub_menu .wrapper_menu_sub_nanzhuang_left_title_box .item:hover{
+    background: #e1251b;
+}
+.wrapper_menu_sub_phone_left_box .wrapper_menu_sub_nanzhuang_left_title_box{
+    margin: 0px 0px 10px 0px;
+}
+/* 美妆二级菜单部分顶部标题*/
+.sub_menu .wrapper_menu_sub_meizhuang_left_title_box .item{
+    display: inline-block;
+    background: #333333;
+    padding: 0px 8px;
+    margin: 0px 10px 0px 0px ;
+    color: #ffffff;
+    
+}
+.sub_menu .wrapper_menu_sub_meizhuang_left_title_box .item:hover{
+    background: #e1251b;
+}
+.wrapper_menu_sub_phone_left_box .wrapper_menu_sub_phone_left_title_box{
+    margin: 0px 0px 10px 0px;
+}
+
+
+
+.sub_menu .jiadian_sub_left_box{
+ width: 700px;
+ float: left;
+}
+.sub_menu .wrapper_menu_sub_phone_left_box{
+    width: 700px;
+    float: left;
+   }
+
+
+
+
+   /* 家电二级菜单右侧div */
+.sub_menu .jiadian_sub_right_box{
+  width: 160px;
+  float: right;
+}
+.sub_menu .jiadian_sub_right_box .jiadian_sub_right_pic_box{
+    margin: 0px 0px 10px 0px;
+}
+
+.sub_menu .jiadian_sub_right_box .jiadian_sub_right_pic_box:last-child{
+    margin: 0px;
+}
+/* 手机二级菜单右侧div */
+.sub_menu .wrapper_menu_sub_phone_right_box{
+    width: 168px;
+    float: right;
+}
+.sub_menu .wrapper_menu_sub_phone_right_box .phone_sub_right_phone_pic_box{
+    margin: 0px 0px 10px 0px;
+}
+
+.sub_menu .wrapper_menu_sub_phone_right_box .phone_sub_right_phone_pic_box:last-child{
+    margin: 0px;
+}
+
+/* 其他二级菜单右侧div.统一写 */
+.sub_menu .wrapper_menu_sub_pic_right_box{
+    width: 160px;
+    float: right;  
+}
+
+.sub_menu .wrapper_menu_sub_pic_right_box .phone_sub_right_pic_box{
+    margin: 0px 0px 10px 0px;
+}
+
+.sub_menu .wrapper_menu_sub_pic_right_box .phone_sub_right_pic_box:last-child{
+    margin: 0px;
+} 
+
+
+.sub_menu dl{
+    clear:left;
+}
+.sub_menu dt,dd{
+    float: left;
+}
+.sub_menu dd a{
+    padding: 4px 8px 4px 8px;
+    /* 规定段落中的文本不进行换行 */
+    white-space: nowrap;
+ }
+
+
+ .sub_menu dl{
+    /* 素盒子的边不能和前面的浮动元素相邻 */
+     clear: left;
+ }
+.sub_menu dt,dd{
+    /* 靠左浮动,Float:none 不使用浮动 */
+    float: left;
+}
+.sub_menu dd a{
+    padding: 4px 8px 4px 8px;
+    /* 规定段落中的文本不进行换行 */
+    white-space: nowrap;
+ }
+
+
+ /* 轮播区域样式 */
+ .content_wrapper_banner_box{
+   margin: 10px;
+ }
+
+ .content_wrapper_banner_box .banner_box{
+   width: 590px;
+   height: 470px;
+   position: relative;
+   overflow: hidden;
+ }
+
+ .content_wrapper_banner_box .banner_box ul{
+    position: absolute;
+    top: 0px;
+    left: -590px;
+    width: 500%;
+    height: 100%;
+ }
+
+ .content_wrapper_banner_box .banner_box ul li{
+   float: left;
+ }
+
+ /* 轮播左箭头指示器区域 */
+ .banner_box .banner_box_left_arrow{
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   background: rgba(0, 0, 0,0.2);
+   top: 45%;
+   left: 0px;
+   color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+ }
+/* 轮播右箭头指示器区域 */
+ .banner_box .banner_box_right_arrow{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0,0.2);
+  top: 45%;
+  right: 0px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* 并集选择器 */
+.banner_box .banner_box_right_arrow span  {
+  font-size: 24px;
+}
+.banner_box .banner_box_left_arrow span{
+  font-size: 24px;
+}
+
+/* 轮播底部指示器区域 */
+.banner_box .banner_box_bottom_indicator{
+  position: absolute;
+  bottom: 3%;
+  left: 10px;
+}
+/* 子代选择器,一类子代 */
+.banner_box .banner_box_bottom_indicator > ol{
+ height: 14px;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ background: rgba(0, 0, 0,0.6);
+}
+
+.banner_box .banner_box_bottom_indicator > ol >li{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+}
+/* 伪类选择器,注意li:active失效，li.active生效 */
+.banner_box .banner_box_bottom_indicator > ol >li.active{
+  background: red;
+}
+
+ 

@@ -414,13 +414,13 @@
    overflow: hidden;
  }
 
- .content_wrapper_banner_box .banner_box ul{
+ /* .content_wrapper_banner_box .banner_box ul{
     position: absolute;
     top: 0px;
     left: -590px;
     width: 500%;
     height: 100%;
- }
+ } */
 
  .content_wrapper_banner_box .banner_box ul li{
    float: left;

@@ -32,7 +32,7 @@ class Banner{
     let frag = document.createDocumentFragment();
     for(let i =0;i<num;i++){
       let li =document.createElement("li");
-      li.setAttribute("positon",i)
+      li.setAttribute("positon",i+1)
       //如果是指示器的第一个li元素，默认选中
       if(i == 0) li.className="active";
       frag.appendChild(li);
@@ -44,7 +44,7 @@ class Banner{
     //es6的箭头函数
     this.indicatorBox.children[0].addEventListener("click",(e)=>{
       let index =  (e.target).getAttribute("positon");
-       console.log("点击的底部指示器下标"+index)
+   
       let offset = (index - this.indicatorPostion) * this.bannerPagWidth
       this.indicatorPostion = index;
       this.moveBanner(offset)
@@ -135,20 +135,26 @@ class Banner{
    //动画的执行速度
    let speed = offset/(time/perTime)
    //最终ul的左侧要移动到的位置
-  let goalLeft = parseFloat(this.ulBox.style.width) - offset;
+  let goalLeft = parseFloat(this.ulBox.style.left) - offset;
 
   this.flag = true;
   let animation = setInterval(()=>{ 
     //如果已经到达ul的左侧要移动到的位置或者接近ul的左侧要移动到的位置
     //当前left -目标left < 单位时间的移动距离
-    if(this.ulBox.style.width == goalLeft || Math.abs((Math.abs(parseFloat(this.ulBox.style.width)) - Math.abs(goalLeft))) < Math.abs(speed)){
+    if(this.ulBox.style.left == goalLeft || Math.abs((Math.abs(parseFloat(this.ulBox.style.left)) - Math.abs(goalLeft))) < Math.abs(speed)){
 
       this.ulBox.style.left == goalLeft
       clearInterval(animation);
       this.flag = false;
+      //最左边的left为0说明是左边最后一辅助图
+      if(parseFloat(this.ulBox.style.left) == 0){
+        this.ulBox.style.left = - this.bannerPageLength * this.bannerPagWidth +"px";
+      
+      }else if(parseFloat(this.ulBox.style.left) == -(this.bannerPageLength + 1) * this.bannerPagWidth){
+        this.ulBox.style.left = -this.bannerPagWidth +  "px";
+      }
     }else{
       this.ulBox.style.left  = parseFloat(this.ulBox.style.left) - speed +"px" ;
-
     }
   },perTime)
 

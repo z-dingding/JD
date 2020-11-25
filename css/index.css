@@ -491,4 +491,42 @@
   background: red;
 }
 
+
+/* 快讯区域 */
+
+.content_wrapper_ad_box{
+    margin-top: 10px;
+    width: 160px;
+    padding: 15px;
+    background: #fff;
+
+}
+
+.content_wrapper_ad_box .ad_title{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.content_wrapper_ad_box  ul{
+    font-size: 12px;
+}
+
+.content_wrapper_ad_box  ul li{
+    padding: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.content_wrapper_ad_box  ul li a{
+  color: #666666;
+  text-decoration: none;
+}
+.content_wrapper_ad_box  ul li span{
+    background: rgba(225, 37, 27,.0.8);
+    color: #e1251b;
+    margin-right: 5px;
+    padding: 4px 2px;
+}
  

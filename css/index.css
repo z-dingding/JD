@@ -503,3 +503,70 @@
   height: 150px;
   margin-bottom: 10px;
 }
+
+/* 快讯区域 */
+
+.content_wrapper_ad_box{
+    margin-top: 10px;
+    width: 160px;
+    padding: 15px;
+    background: #fff;
+
+}
+
+.content_wrapper_ad_box .ad_title{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.content_wrapper_ad_box  ul{
+    font-size: 12px;
+}
+
+.content_wrapper_ad_box  ul li{
+    padding: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.content_wrapper_ad_box  ul li a{
+  color: #666666;
+  text-decoration: none;
+}
+.content_wrapper_ad_box  ul li span{
+    background: rgba(225, 37, 27,.0.8);
+    color: #e1251b;
+    margin-right: 5px;
+    padding: 4px 2px;
+}
+
+
+/* 京东秒杀区域 */
+.content .content_wrapper_info_box{
+    margin: 0 auto;
+    width: 1190px;
+    
+    padding: 10px 0px ;
+}
+
+.content_wrapper_info_box .secondsKill_area{
+    background: #fff;
+    color: #fff;
+    display: flex;
+}
+ /* 秒杀区域-倒计时区域 */
+.secondsKill_area .secondsKill_area_time{
+    width: 260px;
+    height: 190px;
+    float: left;
+    background: url("http://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/img/613f39ecb60e42dfec798a4ffc0bc012.png");
+    /* 把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。 */
+    background-size: contain;
+    /* 相当于  center*/
+    background-position: 50%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}

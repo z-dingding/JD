@@ -15,6 +15,8 @@ class Banner{
     this.flag =false;
     //总共多少banner页
     this.bannerPageLength = this.ulBox.children.length;
+    //轮播自动播放的setInterval对象
+    this.autoPlayEle = null ;
     this.init();
   }
 
@@ -22,6 +24,7 @@ class Banner{
     this.initIndicator();
     this.copyImg();
     this.switchBanner();
+    this.autoPlay();
   }
   /**
    * 初始化底部指示器
@@ -158,5 +161,23 @@ class Banner{
     }
   },perTime)
 
+  }
+
+  autoPlay(){
+    //轮播自动播放
+ this.autoPlayEle =setInterval(() =>{
+        this.bannerBox.querySelector(".banner_box_right_arrow").click();
+    },2000)
+
+    //鼠标移入暂停轮播
+    this.bannerBox.addEventListener("mouseenter",() => {
+      clearInterval(this.autoPlayEle); 
+    })
+    //鼠标移出开始轮播
+    this.bannerBox.addEventListener("mouseleave",() =>{
+      this.autoPlayEle =setInterval(() =>{
+        this.bannerBox.querySelector(".banner_box_right_arrow").click();
+    },2000)
+    })
   }
 }

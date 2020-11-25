@@ -405,6 +405,7 @@
  /* 轮播区域样式 */
  .content_wrapper_banner_box{
    margin: 10px;
+   cursor: pointer;
  }
 
  .content_wrapper_banner_box .banner_box{
@@ -414,13 +415,13 @@
    overflow: hidden;
  }
 
- /* .content_wrapper_banner_box .banner_box ul{
+ .content_wrapper_banner_box .banner_box ul{
     position: absolute;
     top: 0px;
     left: -590px;
     width: 500%;
     height: 100%;
- } */
+ } 
 
  .content_wrapper_banner_box .banner_box ul li{
    float: left;
@@ -491,4 +492,14 @@
   background: red;
 }
 
+/* 轮播右侧广告位 */
+.content_wrapper_ad_box{
+  width: 190px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
  
+.content_wrapper_ad_box .ad_box_div:not(:last-child){
+  height: 150px;
+  margin-bottom: 10px;
+}

@@ -529,4 +529,33 @@
     margin-right: 5px;
     padding: 4px 2px;
 }
- 
+
+
+/* 京东秒杀区域 */
+.content .content_wrapper_info_box{
+    margin: 0 auto;
+    width: 1190px;
+    
+    padding: 10px 0px ;
+}
+
+.content_wrapper_info_box .secondsKill_area{
+    background: #fff;
+    color: #fff;
+    display: flex;
+}
+ /* 秒杀区域-倒计时区域 */
+.secondsKill_area .secondsKill_area_time{
+    width: 260px;
+    height: 190px;
+    float: left;
+    background: url("http://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/img/613f39ecb60e42dfec798a4ffc0bc012.png");
+    /* 把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。 */
+    background-size: contain;
+    /* 相当于  center*/
+    background-position: 50%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+
+}

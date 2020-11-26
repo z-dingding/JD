@@ -859,7 +859,12 @@
     margin-bottom: 10px;
     /* 在恰当的断字点进行换行,break-all：单词内自动换行,如果一个单词很长的话*/
     word-break: break-all;
- 
+    /* 自适应布局 */
+    display: -webkit-box;
+    /* 限制在一个块元素显示的文本的行数 */
+    -webkit-line-clamp: 2;
+    /* 子元素的排列方式 */
+    -webkit-box-orient: vertical;
 }
  .recomment_goods ul li a .goods_desc  i{
     padding: 1px 5px;

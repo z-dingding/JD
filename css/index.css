@@ -558,8 +558,8 @@
 }
  /* 秒杀区域-倒计时区域 */
 .secondsKill_area .secondsKill_area_time{
-    width: 260px;
-    height: 190px;
+    width: 190px;
+    height: 260px;
     float: left;
     background: url("http://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/img/613f39ecb60e42dfec798a4ffc0bc012.png");
     /* 把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。 */
@@ -570,3 +570,355 @@
     text-align: center;
     box-sizing: border-box;
 }
+
+
+.secondsKill_area .secondsKill_area_time .secondsKill_title{
+    font-size: 30px;
+    padding: 10px 0px 100px 0px;
+
+}
+
+
+.secondsKill_area .secondsKill_titleTips{
+    font-size: 14px;
+    padding: 0px 0px 10px 0px;
+}
+
+
+.secondsKill_area .secondsKill_titleTips span{
+    font-size: 18px;
+}
+
+
+
+.secondsKill_area .secondsKill_time {
+    font-size: 20px;
+}
+
+.secondsKill_area .secondsKill_time  span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #2f3430;
+    line-height: 30px;
+    margin: 0px 8px;
+}
+
+ /* 商品区域  */
+.secondsKill_area .secondsKill_area_goods{
+ float: left;
+}
+
+.secondsKill_area .secondsKill_area_goods ul li{
+    width: 200px;
+    height: 260px;
+    /* 可以并排 */
+    display: inline-block;
+    padding: 20px;
+    /* 设置pading在总的width或height里 */
+    box-sizing: border-box;
+}
+
+.secondsKill_area_goods ul li .pic_box{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.secondsKill_area_goods ul li h6{
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    /* 字体的粗细 */
+    font-weight: 400;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.secondsKill_area_goods ul li .secondskill_prize{
+   border: 1px solid #e1251b;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 7px;
+   width: 160px;
+   height: 24px;
+   background-color: #e1251b;
+   line-height: 24px;
+   overflow: hidden;
+   box-sizing: border-box;
+}
+
+.secondskill_prize .secondskill_prize_miaosha{
+    /* 浮动元素脱标准流,可以设置宽高，不区分行内，块级元素了，可以并排*/
+    float: left;
+    width: 92px;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.secondskill_prize .secondskill_prize_miaosha i{
+  font-size: 12px;
+ font-style: normal;
+}
+.secondskill_prize .secondskill_prize_miaosha::before{
+    content: " ";
+    width: 0;
+    height: 0;
+     /* 上,右,下,左 */
+    border-color: transparent white transparent transparent;
+    border-style: solid;
+    /* 上,右,下,左 */
+    border-width: 22px 8px 0 0;
+    position: absolute;
+    top: 0;
+    left: 84px;
+}
+
+.secondskill_prize .secondskill_prize_origin{
+    height: 100%;
+    width: 66px;
+    float: right;
+    background: #fff;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    line-height: 22px;
+    box-sizing: border-box;
+     /* 删除线 */
+    text-decoration: line-through;
+    vertical-align: top;
+}
+.secondsKill_area  .secondskill_area_other{
+    width: 180px;
+    padding: 20px;
+    float: right;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.secondsKill_area  .secondskill_area_other .desc{
+    text-align: center;
+    margin: 20px 0;
+    color: #666666;
+   
+
+}
+
+/* 为您推荐 */
+.wrapper_recommend .recomment_area{
+    margin: 0px auto;
+    width: 1190px;
+    padding: 10px 0px;
+    background: #fff;
+}
+
+.recomment_area .recommend_title .h3title{
+    width: 150px;
+    height: 45px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+    padding: 0px  30px;
+
+}
+
+/* 伪元素选择器 */
+.recomment_area .recommend_title .h3title:before{
+    content: "";
+    background-image: url(http://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/sprite/floor_hd/sprite.png);
+    background-position: 0 0;
+    width: 25px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+}
+.recomment_area .recommend_title .h3title::after{
+    content: "";
+    width: 25px;
+    height: 20px;
+    background-image: url(http://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/sprite/floor_hd/sprite.png);  
+    background-position: -25px 0;
+    right: 0;
+    position: absolute;
+}
+
+.recomment_area .recommend_tab{
+    background: #fff;
+    width: 100%;
+    margin: 0px auto 10px;
+}
+
+
+.recomment_area .recommend_tab ul{
+    padding: 10px 50px;
+    /* 给父元素加弹性布局，使子元素浮动起来 */
+    display: flex;
+}
+
+
+
+.recomment_area .recommend_tab ul li{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+
+.recomment_area .recommend_tab ul li::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 1px;
+    height: 40px;
+    background-color: #dfdfdf;
+
+}
+
+
+.recomment_area .recommend_tab ul li:first-child  .category_title span{
+  color: white;
+  background-color: #f10215;
+  padding: 0px 15px;
+  border-radius: 50px;
+
+}
+
+.recomment_area .recommend_tab ul li .category_title span{
+    color: black;
+    padding: 0px 15px;
+}
+
+
+.recomment_area .recommend_tab ul li:first-child  .category_subTitle span{
+ color: #f10215;
+}
+
+
+
+.recomment_area .recommend_tab ul li .category_subTitle span{
+    color: gray;
+   }
+   
+
+  .wrapper_recommend .recomment_goods{
+    background: #fff;
+    width: 1190px;
+    margin: 10px auto; 
+  }
+
+  .wrapper_recommend .recomment_goods ul{
+      /*弹性布局要想生效，子元素需有高度 */
+      display: flex;
+      /* 允许换行 */
+      flex-wrap: wrap;
+  }
+
+
+  .wrapper_recommend .recomment_goods ul li{
+      box-sizing: border-box;
+      width: 230px;
+      height: 320px;
+      padding: 20px 15px;
+      margin: 0px 10px 10px 0px;
+  }
+
+  /* 配合 flex-wrap: wrap;当宽度合适自动换行 */
+  .recomment_goods ul li:nth-child(5n) {
+    margin-right: 0px;
+}
+
+  .wrapper_recommend .recomment_goods ul li a{
+    color: gray;
+    text-decoration: none ;
+  }
+
+  .recomment_goods .goods_pic {
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+}
+
+.recomment_goods  .goods_desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 行高为高度的一半 */
+    line-height: 24px;
+    height: 48px;
+    margin-bottom: 10px;
+    /* 在恰当的断字点进行换行,break-all：单词内自动换行,如果一个单词很长的话*/
+    word-break: break-all;
+ 
+}
+ .recomment_goods ul li a .goods_desc  i{
+    padding: 1px 5px;
+    background: #e1251b;
+    color: #fff;
+    font-style: normal;
+    border-radius: 3px;
+    margin-right: 4px;
+    font-size: 12px;
+  }
+
+  .recomment_goods  .goods_prize {
+    color: #e1251b;
+  font-size: 18px;
+  font-weight: bold;
+  }
+  .recomment_goods .goods_prize  i{
+      font-size: 12px;
+      font-style: normal;
+      margin-right: 3px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
